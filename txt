@@ -1,0 +1,102 @@
+query{
+  getAll {
+    results {
+      id
+      name
+      age
+      country
+    }
+  }
+}
+
+# ----insert----
+# mutation{
+#   createUser(post:{
+#     name:"xyz",
+#     age:25,
+#     country:"cdcd"
+#   })
+#   {
+#     id
+#     name
+#     age
+#     country
+#   }
+# }
+
+# ----update----
+# mutation{
+#   updateUser(id:"663b4f84ca0dd8741dfcc132",input: {
+#     name:"Secon-last",
+#     age:25,
+#     country:"sdsad"
+#   })
+#   {
+#     id
+#     name
+#     age
+#     country
+#   }
+# }
+
+# ---delete----
+# mutation{
+#   deleteUser(id:"663b53a8ca0dd8741dfcc148")
+# }
+
+______________________________________________________________________________
+
+# userEnquiry
+
+# getAll
+# query{
+#   getAllUserInquiries {
+#       results {
+#           id
+#           userId
+#           title
+#           description
+#       }
+#   }
+# }
+
+# get Single User Inquiry
+# query{
+#   getSingleUserInquiry(userId: "663a12d7d692577928acd5a4") {
+#      results {
+#           id
+#           userId
+#           title
+#           description
+#       }
+#   }
+# }
+
+# insert
+# mutation {
+#   createUserInquiry(post: {
+#     userId: "663a12d7d692577928acd5a4",
+#     title: "Title of the Inquiry second",
+#     description: "Description of the Inquiry second"
+#   }) {
+#     id
+#     userId
+#     title
+#     description
+#   }
+# }
+
+# update
+# mutation {
+#   updateUserInquiry(id: "663db228920882830d3b4cf5", input: {
+#     userId: "663a1292d692577928acd5a2",
+#     title: "vijay's Title",
+#     description: "vijay's Description"
+#   }) {
+#     id
+#     userId
+#     title
+#     description
+#   }
+# }
+
